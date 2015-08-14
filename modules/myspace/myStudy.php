@@ -57,7 +57,8 @@
 										"c"=>"C语言基础",
 										""=>"无课程",
 										"aliyun-ecs-essential"=>"阿里云ECS",
-										"aliyun-oss-essential"=>"阿里云OSS"
+										"aliyun-oss-essential"=>"阿里云OSS",
+										"aliyun-rds-essential"=>"阿里云RDS"
 									);
 							echo $project[$data["project"]];
 					?>
@@ -196,6 +197,31 @@
 			  <?php }
 			  else if($data["project"]=="aliyun-oss-essential"){?>
 			  <a href="myCourse.php?course=aliyun-oss-essential">
+			  <div style="border:2px solid #0099FF;font-size:20px;font-weight:bold;color:#FF9900;height:32px;padding:5px;margin:5px;text-align:center;width:100px;float:left;">开始学习</div>
+			</a>
+			<div style="border:2px solid #CCCCCC;font-size:20px;font-weight:bold;color:#00AAFF;height:32px;padding:5px;margin:5px;text-align:center;width:100px;float:left;">第一周</div>
+			<div style="clear:float;clear:both;"></div>
+			    <table style="font-size:14px;line-height:22px;">
+			    <tr>
+				  <th style="width:80px;">学习目标：</th>
+				  <td>学习数据库知识并使用MySQL完成论坛类项目，在第六周进行DEMO。</td>
+				</tr>
+				<tr>
+				  <th style="width:80px;">后续课程：</th>
+				  <td>①PHP、JSP、C++等语言；②MySQL、SQL Server等数据库；③JavaScript</td>
+				</tr>
+				<tr>
+				  <th>学习知识：</th>
+				  <td>SQL语句、MySQL安装、MySQL增删改查、MySQL和PHP/JSP交互、数据库设计</td>
+				</tr>
+				<tr>
+				  <th>兴趣建议：</th>
+				  <td>①开发个人博客网站；②开发小型论坛；③为学校周边商店、书店等开发网站</td>
+				</tr>
+			  </table>
+			  <?php }
+			  else if($data["project"]=="aliyun-rds-essential"){?>
+			  <a href="myCourse.php?course=aliyun-rds-essential">
 			  <div style="border:2px solid #0099FF;font-size:20px;font-weight:bold;color:#FF9900;height:32px;padding:5px;margin:5px;text-align:center;width:100px;float:left;">开始学习</div>
 			</a>
 			<div style="border:2px solid #CCCCCC;font-size:20px;font-weight:bold;color:#00AAFF;height:32px;padding:5px;margin:5px;text-align:center;width:100px;float:left;">第一周</div>

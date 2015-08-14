@@ -15,6 +15,7 @@
 	  .current {color:#FF9900;}
 	</style>
 	<script src="../../src/js/account.js" type="text/javascript"></script>
+	<script type="text/javascript" src="../../src/js/jquery.min.js"></script>
   <head>
   <body style="margin:0px;font-family:'Microsoft YaHei',宋体,Arial;background-image:url('../../src/images/custom-bg-4.jpg');background-size:100% 100%;">
     <?php include '../../src/header.php'?>
@@ -31,13 +32,13 @@
 			}
 		  ?>
 	<div>
-	  <div class="main index" style="padding-top:32px;min-width:960px;margin:0 auto;font-size:14px;">
+	  <div class="main index" style="padding-top:40px;min-width:960px;margin:0 auto;font-size:14px;">
 	    <?php include '../../src/myspace_index.php'?>
 		<div class="content" style="width:800px;float:left;margin:0 0 0px 200px;min-height:320px;">
-		  <iframe src="../../course/<?php echo empty($_GET["course"])?"website":$_GET["course"]?>/<?php echo empty($_GET["process"])?"week1":$_GET["process"]?>.php" style="border:0px;width:100%;height:800px;"></iframe>
+		  <iframe id="course-content" src="../../course/<?php echo empty($_GET["course"])?"website":$_GET["course"]?>/<?php echo empty($_GET["process"])?"week1":$_GET["process"]?>.php" style="border:0px;width:100%;height:565px;"></iframe>
 		</div>
 		<div class="project_item" style="width:318px;float:right;padding:0px 20px 0px 10px;border-left:2px solid #EEEEEE;background-color:#F7F6F2;position:absolute;right:0px;">
-		  <iframe src="../../course/<?php echo empty($_GET["course"])?"website":$_GET["course"]?>/intro.php?course=<?php echo $_GET["course"]."&process=".$_GET["process"]?>" style="border:0px;width:100%;height:800px;"></iframe>
+		  <iframe src="../../course/<?php echo empty($_GET["course"])?"website":$_GET["course"]?>/intro.php?course=<?php echo $_GET["course"]."&process=".$_GET["process"]?>" style="border:0px;width:100%;height:546px;"></iframe>
 		</div>
 	</div>
 	<div style="clear:float;clear:both;"></div>
@@ -49,4 +50,13 @@
 alert("<?php echo $_GET["info"]?>");
 window.location.href="myStudy.php";
 <?php }?>
+</script>
+<script type="text/javascript">
+  $(window.frames["course-content"].document).find("#image-rds-1").on("click",function(){
+	alert($("#image-rds-1").attr("width"));
+	if($("#image-rds-1").attr("width")!="200px")
+	  $("#image-rds-1").attr("width","200px");
+    else
+	  $("#image-rds-1").attr("width","100%");
+  });
 </script>

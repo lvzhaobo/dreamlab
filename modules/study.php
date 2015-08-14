@@ -73,8 +73,8 @@
 			      $data = array(
 								array("name"=>"阿里云ECS","url"=>$workspace."course/aliyun-ecs-essential.php","img"=>$workspace."src/images/dream.jpg","text"=>"初步了解阿里云ECS，包括ECS购买、查看状态、登录后台、创建应用等。","type"=>"助理级","started"=>true,"required"=>"无前提课程"),
 								array("name"=>"阿里云OSS","url"=>$workspace."course/aliyun-oss-essential.php","img"=>$workspace."src/images/dream.jpg","text"=>"初步了解阿里云OSS，包括创建Bucket、添加对象、删除对象和Bucket等。","type"=>"助理级","started"=>true,"required"=>"无前提课程"),
-								array("name"=>"阿里云RDS","url"=>$workspace."course/aliyun-rds-essential.php","img"=>$workspace."src/images/dream.jpg","text"=>"初步了解阿里云RDS，包括RDS购买、查看状态、登录后台、在应用中使用等。","type"=>"助理级","started"=>false,"required"=>"无前提课程"),
-								array("name"=>"阿里云ELB","url"=>$workspace."course/aliyun-elb-essential.php","img"=>$workspace."src/images/dream.jpg","text"=>"初步了解阿里云ELB，包括ELB购买、查看状态、登录后台、在应用中使用等。","type"=>"助理级","started"=>false,"required"=>"无前提课程"),
+								array("name"=>"阿里云RDS","url"=>$workspace."course/aliyun-rds-essential.php","img"=>$workspace."src/images/dream.jpg","text"=>"初步了解阿里云RDS，包括RDS购买、查看状态、登录后台、在应用中使用等。","type"=>"助理级","started"=>true,"required"=>"无前提课程"),
+								array("name"=>"阿里云SLB","url"=>$workspace."course/aliyun-slb-essential.php","img"=>$workspace."src/images/dream.jpg","text"=>"初步了解阿里云ELB，包括ELB购买、查看状态、登录后台、在应用中使用等。","type"=>"助理级","started"=>false,"required"=>"无前提课程"),
 								/*array("name"=>"C语言基础","url"=>$workspace."course/c.php","img"=>$workspace."src/images/c.jpg","text"=>"辅助大学课程，最重要的基础课程","type"=>"basic","started"=>true,"required"=>"建议本学期开设C语言课程的同学同步学习"),
 								array("name"=>"数据库","url"=>$workspace."course/database.php","img"=>$workspace."src/images/mysql.jpg","text"=>"软件开发必不可少的一部分，通过本课程学习可以让你轻松应对期末数据库考试。","type"=>"basic","started"=>true,"required"=>"建议本学期开设数据库课程的同学同步学习"),
 								
