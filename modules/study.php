@@ -71,10 +71,12 @@
 			  <div style="clear:float;clear:both;"></div>
 			  <?php 
 			      $data = array(
-								array("name"=>"阿里云ECS","url"=>$workspace."course/aliyun-ecs-essential.php","img"=>$workspace."src/images/dream.jpg","text"=>"初步了解阿里云ECS，包括ECS购买、查看状态、登录后台、创建应用等。","type"=>"助理级","started"=>true,"required"=>"无前提课程"),
-								array("name"=>"阿里云OSS","url"=>$workspace."course/aliyun-oss-essential.php","img"=>$workspace."src/images/dream.jpg","text"=>"初步了解阿里云OSS，包括创建Bucket、添加对象、删除对象和Bucket等。","type"=>"助理级","started"=>true,"required"=>"无前提课程"),
-								array("name"=>"阿里云RDS","url"=>$workspace."course/aliyun-rds-essential.php","img"=>$workspace."src/images/dream.jpg","text"=>"初步了解阿里云RDS，包括RDS购买、查看状态、登录后台、在应用中使用等。","type"=>"助理级","started"=>true,"required"=>"无前提课程"),
-								array("name"=>"阿里云SLB","url"=>$workspace."course/aliyun-slb-essential.php","img"=>$workspace."src/images/dream.jpg","text"=>"初步了解阿里云ELB，包括ELB购买、查看状态、登录后台、在应用中使用等。","type"=>"助理级","started"=>false,"required"=>"无前提课程"),
+								array("name"=>"阿里云ECS","url"=>$workspace."course/aliyun-ecs-essential.php","img"=>$workspace."src/images/aliyun/ecs-1.jpg","text"=>"初步了解阿里云ECS，包括ECS购买、查看状态、登录后台、创建应用等。","type"=>"入门级","started"=>true,"required"=>"无前提课程"),
+								array("name"=>"阿里云OSS","url"=>$workspace."course/aliyun-oss-essential.php","img"=>$workspace."src/images/aliyun/oss-1.jpg","text"=>"初步了解阿里云OSS，对象存储服务。包括创建Bucket、添加对象、删除对象和Bucket等。","type"=>"入门级","started"=>true,"required"=>"无前提课程"),
+								array("name"=>"阿里云RDS","url"=>$workspace."course/aliyun-rds-essential.php","img"=>$workspace."src/images/dream.jpg","text"=>"初步了解阿里云RDS，包括RDS购买、查看状态、登录后台、在应用中使用等。","type"=>"入门级","started"=>true,"required"=>"无前提课程"),
+								array("name"=>"阿里云SLB","url"=>$workspace."course/aliyun-slb-essential.php","img"=>$workspace."src/images/dream.jpg","text"=>"初步了解阿里云SLB，服务器负载均衡包括SLB购买、查看状态、登录后台、在应用中使用等。","type"=>"入门级","started"=>false,"required"=>"无前提课程"),
+								array("name"=>"域名和备案（基于阿里云）","url"=>$workspace."course/aliyun-domain.php","img"=>$workspace."src/images/dream.jpg","text"=>"向全世界发布网站，包括购买域名、DNS解析、接入配置和网站备案等。","type"=>"入门级","started"=>false,"required"=>"无前提课程"),
+								array("name"=>"Wordpress网站架构（基于阿里云）","url"=>$workspace."course/aliyun-wordpress-profetional.php","img"=>$workspace."src/images/dream.jpg","text"=>"构建Wordpress网站，并使用阿里云ECS、OSS、ELB、RDS、CDN等产品进行架构设计","type"=>"专业级","started"=>false,"required"=>"学习阿里云入门级课程"),
 								/*array("name"=>"C语言基础","url"=>$workspace."course/c.php","img"=>$workspace."src/images/c.jpg","text"=>"辅助大学课程，最重要的基础课程","type"=>"basic","started"=>true,"required"=>"建议本学期开设C语言课程的同学同步学习"),
 								array("name"=>"数据库","url"=>$workspace."course/database.php","img"=>$workspace."src/images/mysql.jpg","text"=>"软件开发必不可少的一部分，通过本课程学习可以让你轻松应对期末数据库考试。","type"=>"basic","started"=>true,"required"=>"建议本学期开设数据库课程的同学同步学习"),
 								
@@ -109,7 +111,7 @@
 			    <div class="project_item">
 			      <img src="<?php echo $item['img']?>" style="width:222px;height:140px;float:left;" />
 			      <div class="project_item_title" style="float:left;">
-				  <div style="font-size:14px;font-weight:normal;color:#333333;line-height:28px;"><?php echo $item["name"]?></div>
+				  <div style="font-size:14px;font-weight:normal;color:#333333;line-height:28px;font-weight:bold;"><?php echo $item["name"]?></div>
 				    <?php if($item["type"]=="basic"){?>
 					<span style="color:#FF9900;line-height:28px;">基本课程</span>
 					<?php }
@@ -121,7 +123,7 @@
 					<?php }
 						  else{
 					?>
-					<span style="color:#FF0099;line-height:28px;"><?php echo $item["type"]?></span>
+					<span style="color:#0099FF;line-height:28px;"><?php echo $item["type"]?></span>
 					<?php }?>
 					<div style="color:#333333;font-size:13px;line-height:22px;">
 					  <span style="color:#999999">课程简介：</span><?php echo $item['text']?>

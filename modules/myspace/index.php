@@ -34,8 +34,8 @@
 	  <div class="main index" style="padding-top:32px;min-width:960px;margin:0 auto;font-size:14px;min-height:400px;">
 	    
 	    <?php include '../../src/myspace_index.php'?>
-		<div class="content" style="width:800px;float:left;margin:0 0 40px 200px;min-height:320px;">
-		<div>
+		<div class="content" style="width:800px;float:left;margin:0 0 40px 200px;min-height:320px;border-bottom:2px solid #CCCCCC;">
+		<div style="">
 		  <?php
 			include '../../lib/db.php';
 			$data = array();
@@ -167,7 +167,7 @@
 		  </div>-->
 		  </div>
 		
-		<div class="project_item" style="width:300px;height:100%;float:right;padding:10px 20px 10px 20px;border-left:2px solid #CCCCCC;">
+		<?php /*?><div class="project_item" style="width:300px;height:100%;float:right;padding:10px 20px 10px 20px;border-left:2px solid #CCCCCC;">
 		  <?php while($team = mysql_fetch_array($result_team)){?>
 		  <fieldset>
 		  <legend>我的团队</legend>
@@ -204,6 +204,7 @@
 		  </fieldset>
 		  <?php }?>
 		</div>
+		<?php */?>
 		</div>
 	</div>
 	<div style="clear:float;clear:both;"></div>

@@ -307,7 +307,7 @@
 			}
 			
 			include '../../lib/db.php';
-			$sql = "SELECT * FROM sgfw_discuss ORDER BY create_time DESC;";
+			$sql = "SELECT * FROM sgfw_discuss WHERE id > 55 ORDER BY create_time DESC;";
 			$result = mysql_query($sql,$conn);
 			$i = 0;
 			while($item = @mysql_fetch_array($result)){

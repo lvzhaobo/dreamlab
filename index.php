@@ -15,12 +15,12 @@
   <body style="margin:0px;font-family:'Microsoft YaHei',宋体,Arial;">
   <?php $rand = rand(1,5);$img = "bg".$rand.".jpg";?>
     <?php include 'src/header.php'?>
-	<div id="header">
+	<?php ?><div id="header">
   <div class="wrap">
    <div id="slide-holder">
 		<div id="slide-runner">
-			<a target="_blank"><img id="slide-img-0" src="src/images/bg6.jpg" class="slide" alt="" style="width:100%;overflow:hidden;"/></a>
-			<a target="_blank"><img id="slide-img-1" src="src/images/bg.jpg" class="slide" alt="" style="width:100%;overflow:hidden;"/></a>
+			<a target="_blank"><img id="slide-img-0" src="src/images/bg1.jpg" class="slide" alt="" style="width:100%;overflow:hidden;"/></a>
+			<a target="_blank"><img id="slide-img-1" src="src/images/bg1-1.jpg" class="slide" alt="" style="width:100%;overflow:hidden;"/></a>
 			<a target="_blank"><img id="slide-img-2" src="src/images/bg4.jpg" class="slide" alt="" style="width:100%;overflow:hidden;margin:-100px 0 0 0;"/></a>
 			<div id="slide-controls">
 			 <p id="slide-client" class="text"><strong></strong><span></span></p>
@@ -53,7 +53,7 @@
 	];
    </script>
   </div>
-</div>
+</div><?php ?>
 <!--<div style="width:100%;height:420px;background-image:url('bg-.jpg');background-repeat:no-repeat;background-color:#FFFFFF;">
 <img src="image/dream.jpg" style="margin:40px 100px 0 220px;width:420px;float:left;">
 <div style="margin:40px 0 0 100px;">
@@ -90,35 +90,38 @@
 	    <?php if($rand%3==0){?><span>我是大一学生，在学习梦想学院的C语言基础，能很好的弥补老师讲课的不足</span><br /><?php }?>
 		<?php if($rand%3==1){?><span>在迷茫的大学生活中，我想获得更多的能力和舞台，我在使用PHP开发学校的论坛</span><br /><?php }?>
 		<?php if($rand%3==2){?><span>寻找有梦想、有兴趣、有想法的同学，通过我们的扶持，让你的想法、项目顺利发芽、成长</span><br /><?php }?>
-	  </div><?php /*?>
-	  <div id="project" name="project" style="width:960px;margin:140px auto;font-size:32px;">
+	  </div><?php */?>
+	  <div style="height:548px;background:rgba(0, 0, 0, 0) url('src/images/bg1.jpg') no-repeat scroll 100% 100% / 100% auto;display:none;">
+	    <!--<img src="src/images/bg1.jpg" style="width:100%;" />-->
+	  </div>
+	  <div id="project" name="project" style="width:1200px;margin:0px auto;font-size:32px;line-height:98px;height:98px;">
 	    <a href="index.php">
-		<div style="width:192px;background-color:rgba(1515,00,00,0.25);height:60px;text-align:center;float:left;">
+		<div style="width:232px;background-color:rgba(1515,00,00,0.25);height:100px;text-align:center;float:left;">
 		  首页
 		</div>
 		</a>
-		<a href="study.php">
-		<div style="width:192px;background-color:rgba(00,1211,1014,0.25);height:60px;text-align:center;float:left;">
-		  种子课程
+		<a href="modules/study.php">
+		<div style="width:232px;background-color:rgba(00,1211,1014,0.25);height:100px;text-align:center;float:left;">
+		  实验室
 		</div>
 		</a>
-		<a href="project.php">
-		<div style="width:192px;background-color:rgba(00,99,1515,0.25);height:60px;text-align:center;float:left;">
-		  萌芽项目
+		<a href="modules/cloud.php">
+		<div style="width:232px;background-color:rgba(00,99,1515,0.25);height:100px;text-align:center;float:left;">
+		  云汇
 		</div>
 		</a>
-		<a href="team.php">
-		<div style="width:192px;background-color:rgba(150,00,99,0.25);height:60px;text-align:center;float:left;">
-		  梦想团队
+		<a href="modules/discuss.php">
+		<div style="width:232px;background-color:rgba(150,00,99,0.25);height:100px;text-align:center;float:left;">
+		  讨论
 		</div>
 		</a>
-		<a href="about.php">
-	    <div style="width:192px;background-color:rgba(1515,99,00,0.25);height:60px;text-align:center;float:left;">
+		<a href="modules/about.php">
+	    <div style="width:232px;background-color:rgba(1515,99,00,0.25);height:100px;text-align:center;float:left;">
 		  关于
 		</div>
 		</a>
 	  </div>
-	  <?php */?>
+	  <?php ?>
 	<?php /*?></div>
 	<div><?php */?>
 	  <div class="main index">
@@ -223,7 +226,7 @@
 			  <a href="course/website.php" target="_blank"><div style="border:2px solid #FF00AA;width:100px;height:28px;padding:10px 60px;text-align:center;margin:60px 0 0 0;color:#FF00AA;border-radius:0.5em;">查看详情</div></a>
 			</div>
 		  </div>-->
-		  <div>
+		  <?php /*?><div>
 			<div style="min-height:465px;padding:0 0 0 280px;background-color:#F3F3F3;">
 			  <div style="padding:10px 0;">
 			    <div class="item_content" style="min-width:800px;line-height:26px;font-size:14px;">
@@ -461,7 +464,7 @@
 			  </div>
 			</div>
 			<div style="clear:float;clear:both;"></div>-->
-			
+			<?php */?>
 		  </div>
 		</div>
 	</div>
