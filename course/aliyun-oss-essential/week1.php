@@ -13,11 +13,11 @@
 	  .intro_content {color:#999999;}
 	  .current {color:#FF9900;}
 	  .item {padding:10px 20px;border-left:2px solid #00AAFF;margin:28px 0px;background-color:#FFFFFF;box-shadow:0 0px 5px #999999;}
-	  .item_title {font-weight:bold;font-size:18px;line-height:28px;margin:0 0 5px 0;}
+	  .item_title {font-weight:bold;font-size:18px;line-height:28px;margin:0 0 5px 0;border-bottom:2px solid #CCCCCC;padding-bottom:5px;}
 	</style>
-	<script src="account.js" type="text/javascript"></script>
+	<script type="text/javascript" src="../../src/js/jquery.min.js"></script>
   <head>
-  <body style="padding:6px 10px 10px 10px;font-family:'Microsoft YaHei',宋体,Arial;line-height:24px;color:#333333;font-size:14px;background-color:#FFFFFF;">
+  <body style="padding:0px 10px 10px 10px;font-family:'Microsoft YaHei',宋体,Arial;line-height:24px;color:#333333;font-size:14px;background-color:#FFFFFF;">
 	<div style="" class="item">
 	  <div style="" class="item_title">
 	    课程目标

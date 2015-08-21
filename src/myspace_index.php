@@ -32,10 +32,10 @@ $img = $workspace."/data/upload/".$data["img"];
 $current_page = preg_replace("/.*\//","",$current_page);
 
 $nav = array(
-			array('href'=>$workspace.'/modules/myspace/index.php','label'=>'基本信息','links'=>array('index.php')),
 			array('href'=>$workspace.'/modules/myspace/myStudy.php','label'=>'我的课程','links'=>array('myStudy.php','myCourse.php')),
 			array('href'=>$workspace.'/modules/myspace/myHomework.php','label'=>'我的作业','links'=>array('myHomework.php')),
-			array('href'=>$workspace.'/modules/myspace/myResource.php','label'=>'学习资源','links'=>array('myResource.php'))
+			array('href'=>$workspace.'/modules/myspace/myResource.php','label'=>'学习资源','links'=>array('myResource.php')),
+			array('href'=>$workspace.'/modules/myspace/index.php','label'=>'信息设置','links'=>array('index.php')),
 		);
 
 $nav_str = "";

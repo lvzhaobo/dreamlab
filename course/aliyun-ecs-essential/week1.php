@@ -13,11 +13,11 @@
 	  .intro_content {color:#999999;}
 	  .current {color:#FF9900;}
 	  .item {padding:10px 20px;border-left:2px solid #00AAFF;margin:28px 0px;background-color:#FFFFFF;box-shadow:0 0px 5px #999999;}
-	  .item_title {font-weight:bold;font-size:18px;line-height:28px;margin:0 0 5px 0;}
+	  .item_title {font-weight:bold;font-size:18px;line-height:28px;margin:0 0 5px 0;border-bottom:2px solid #CCCCCC;padding-bottom:5px;}
 	</style>
-	<script src="account.js" type="text/javascript"></script>
+	<script type="text/javascript" src="../../src/js/jquery.min.js"></script>
   <head>
-  <body style="padding:6px 10px 10px 10px;font-family:'Microsoft YaHei',宋体,Arial;line-height:24px;color:#333333;font-size:14px;background-color:#FFFFFF;">
+  <body style="padding:0px 10px 10px 10px;font-family:'Microsoft YaHei',宋体,Arial;line-height:24px;color:#333333;font-size:14px;background-color:#FFFFFF;">
 	<div style="" class="item">
 	  <div style="" class="item_title">
 	    课程目标
@@ -56,21 +56,56 @@
 	</div>
 	<div style="border-left:2px solid #FF0099;" class="item">
 	  <div style="" class="item_title">
-	    购买、操作ECS
+	    购买ECS
 	  </div>
 	  <div style="">
 		<ul style="font-size:14px;">
 		  <li>访问www.aliyun.com，在产品页面点击“云服务器ECS”。点击“立即购买”。</li>
-		  <li>选择“包年包月”方式（可以选择“按量付费”）。选择地域（例如：上海，不同地域之间产品内网不互通）、可用区、CPU、内存，公网带宽选择“按固定带宽”并选择1M带宽值（可选择“按使用流量”，流量费用会单独收取）。ECS会默认开启“云盾”，用以保护ECS安全，此功能现在不收费。</li>
-		  <li>选择公共镜像，如“Aliyun Linux”，选择版本号为“15.1 32位”。（可以从“镜像市场”中选择由第三方制作并托管在阿里云“云市场”的镜像，大部分镜像免费试用。）选择系统盘为“云硬盘”。增加一块“数据盘”，大小为“5G”。</li>
-		  <li>设置“密码”（也可以选择“创建后设置”）和实例名称，如“MyECS”。</li>
+		  <li><br />
+		    <div id="rds-1">
+		      <img id="image-rds-1" src="../../src/images/aliyun/ecs-2.jpg" style="width:100%;box-shadow:0 0 5px #CCCCCC;padding:10px 0;margin:10px 0;" />
+		    </div>			选择“包年包月”方式（可以选择“按量付费”）。选择地域（例如：上海，不同地域之间产品内网不互通）、可用区、CPU、内存。ECS会默认开启“云盾”，用以保护ECS安全，此功能现在不收费。</li>
+		  <li><br />
+		    <div id="rds-1">
+		      <img id="image-rds-1" src="../../src/images/aliyun/ecs-3.jpg" style="width:100%;box-shadow:0 0 5px #CCCCCC;padding:10px 0;margin:10px 0;" />
+		    </div>
+			公网带宽选择“按固定带宽”并选择1M带宽值（可选择“按使用流量”，流量费用会单独收取）。选择公共镜像，如“Aliyun Linux”，选择版本号为“15.1 32位”。（可以从“镜像市场”中选择由第三方制作并托管在阿里云“云市场”的镜像，大部分镜像免费试用。）</li>
+		  <li><br />
+		    <div id="rds-1">
+		      <img id="image-rds-1" src="../../src/images/aliyun/ecs-4.jpg" style="width:100%;box-shadow:0 0 5px #CCCCCC;padding:10px 0;margin:10px 0;" />
+		    </div>
+			选择系统盘为“云硬盘”。增加一块“数据盘”，大小为“5G”。设置“密码”（也可以选择“创建后设置”）和实例名称，如“MyECS”。</li>
 		  <li>选择“购买时长”为“1个月”，“数量”为“1台”。点击“立即购买”，在订单处点击“去支付”。付款成功后，阿里云将会启动ECS实例。</li>
-		  <li>在阿里云首页点击“管理控制台”或“账号名”，进入管理控制台。选择“云服务器ECS”菜单，即可查看“概览”页面。“概览”页面包括了“安全概览”和“我的资源”（显示阿里云多个地域中ECS实例数量）。</li>
-		  <li>在“实例”页面查看创建好的ECS实例。在列表中点击“监控”列的图标将显示该ECS的CPU、网络数据。</li>
-		  <li>在列表最右侧“更多”中选择“修改信息”，可以编辑“实例名称”和“实例说明”。</li>
-		  <li>在列表最右侧“更多”中选择“停止”，可以停止实例，对于“包年包月”付费ECS实例，停止实例不会延长实例到期时间。选择“重启”可以重启实例，ECS系统盘数据不会丢失，但临时文件会被删掉，数据盘数据不受影响。</li>
-		  <li>在列表最右侧“更多”中选择“重置密码”，此时需要先“停止”实例才能进行“重置密码”的操作，重置密码后ECS实例会自动启动。</li>
-		  <li>“升级”操作可以变更ECS实例的配置，“续费”操作将会延长ECS实例到期时间。</li>
+		</ul>
+	  </div>
+	</div>
+	<div style="border-left:2px solid #FF0099;" class="item">
+	  <div style="" class="item_title">
+	    操作ECS
+	  </div>
+	  <div style="">
+		<ul style="font-size:14px;">
+		  <li><br />
+		    <div id="rds-1">
+		      <img id="image-rds-1" src="../../src/images/aliyun/ecs-5.jpg" style="width:100%;box-shadow:0 0 5px #CCCCCC;padding:10px 0;margin:10px 0;" />
+		    </div>在阿里云首页点击“管理控制台”或“账号名”，进入管理控制台。选择“云服务器ECS”菜单，即可查看“概览”页面。“概览”页面包括了“安全概览”和“我的资源”（显示阿里云多个地域中ECS实例数量）。</li>
+		  <li><br />
+		    <div id="rds-1">
+		      <img id="image-rds-1" src="../../src/images/aliyun/ecs-7.jpg" style="width:100%;box-shadow:0 0 5px #CCCCCC;padding:10px 0;margin:10px 0;" />
+		    </div>
+			在“实例”页面查看创建好的ECS实例。在列表中点击“监控”列的图标将显示该ECS的CPU、网络数据。</li>
+		  <li>
+		    <span style="font-weight:bold;">（此操作仅限于“包年包月”类型的ECS实例，“按需付费”不支持此操作。）</span><br />
+		  <p>在列表最右侧“更多”中选择“修改信息”，可以编辑“实例名称”和“实例说明”。</p>
+		  <p>在列表最右侧“更多”中选择“停止”，可以停止实例，对于“包年包月”付费ECS实例，停止实例不会延长实例到期时间。选择“重启”可以重启实例，ECS系统盘数据不会丢失，但临时文件会被删掉，数据盘数据不受影响。<br /></p>
+		  <p>在列表最右侧“更多”中选择“重置密码”，此时需要先“停止”实例才能进行“重置密码”的操作，重置密码后ECS实例会自动启动。<br /></p>
+		  <p>“升级”操作可以变更ECS实例的配置，“续费”操作将会延长ECS实例到期时间。</p></li>
+		  <li><br />
+		    <div id="rds-1">
+		      <img id="image-rds-1" src="../../src/images/aliyun/ecs-9.jpg" style="width:100%;box-shadow:0 0 5px #CCCCCC;padding:10px 0;margin:10px 0;" />
+		    </div>
+			在列表右侧选择“管理”，查看ECS实例详细信息。
+		  </li>
 		</ul>
 	  </div>
 	</div>
@@ -78,27 +113,15 @@
 	  <div style="" class="item_title">
 		连接ECS
 	  </div>
-	  <div style="">
-	    <p>下载安装火狐浏览器firebug插件，安装好之后需要重启火狐浏览器以便生效。</p>
-	  </div>
-	  <img src="../../src/images/courses/website-week2-4.jpg" style="width:720px;border:2px solid #CCCCCC;border-radius:0.5em;" />
-	  <div style="">
-	    <p>在键盘中按F12或在浏览器的工具->开发者工具中打开firebug，如上图所示。下方会显示出页面代码结构和内容，方便查看。</p>
-	  </div>
-	  <img src="../../src/images/courses/website-week2-5.jpg" style="width:720px;border:2px solid #CCCCCC;border-radius:0.5em;" />
-	  <div style="">
-	    <p>点击左边的图标，然后移动到页面的最新消息中（或任意地方），可在firebug面板中查看此处的代码，方便查看任意位置的代码。如想知道苹果官网的效果或腾讯、新浪网站的内容，可以用此方法查看，可以从中学到东西的。</p>
+	</div>
+	<div style="border-left:2px solid #99FF00;" class="item">
+	  <div style="" class="item_title">
+		搭建网站
 	  </div>
 	</div>
 	<div style="border-left:2px solid #99FF00;" class="item">
 	  <div style="" class="item_title">
-		文档
-	  </div>
-	  <div style="">
-		<p>
-		  对于网站开发、软件开发，良好的文档时少不了的，可以方便团队成员很好的交流。考虑到大家时间有限，我们整理了一份设计文档，希望大家能认真阅读并掌握其内容和思路。
-		</p>
-		<a href="../../src/doc/website_design_document.docx" target="_blank" style="color:#333333;margin:0 0 0 50px;">点击下载网站设计文档</a>
+		总结
 	  </div>
 	</div>
   </body>

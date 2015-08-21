@@ -3,7 +3,7 @@ session_start();
 //var_dump($_SESSION);
 $workspace = "http://".$_SERVER["HTTP_HOST"]."/dreamlab/";
 
-if(isset($_SESSION["login_start"]) && (time()-$_SESSION["login_start"])>=1800){
+if(isset($_SESSION["login_start"]) && (time()-$_SESSION["login_start"])>=300){
 	unset($_SESSION["user"]);
 	unset($_SESSION["login_start"]);
 }
@@ -22,7 +22,7 @@ $nav = array(
 			//array('href'=>'project.php','label'=>'萌芽项目','links'=>array('project.php')),
 			//array('href'=>$workspace.'modules/team.php','label'=>'梦想团队','links'=>array('modules/team.php')),
 			array('href'=>$workspace.'modules/cloud.php','label'=>'云汇','links'=>array('modules/cloud.php')),
-			array('href'=>$workspace.'modules/myspace/index.php','label'=>'我的空间','links'=>array('modules/myspace/index.php','modules/myspace/myStudy.php','modules/myspace/myCourse.php','modules/createTeam.php','modules/createProject.php')),
+			array('href'=>$workspace.'modules/myspace/myStudy.php','label'=>'我的空间','links'=>array('modules/myspace/index.php','modules/myspace/myStudy.php','modules/myspace/myCourse.php','modules/createTeam.php','modules/createProject.php')),
 			array('href'=>$workspace.'modules/discuss.php','label'=>'讨论','links'=>array('modules/discuss.php')),
 			//array('href'=>$workspace.'modules/about.php','label'=>'关于','links'=>array('modules/about.php'))
 		);

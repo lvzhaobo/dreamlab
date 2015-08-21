@@ -44,7 +44,7 @@
 			  <div style="width:600px;margin:0 auto;">
 			  <?php
 			    include '../lib/db.php';
-				$sql = "SELECT * FROM sgfw_discuss WHERE id > 53 ORDER BY create_time DESC;";
+				$sql = "SELECT * FROM sgfw_discuss WHERE id > 36 ORDER BY create_time DESC;";
 				$result = mysql_query($sql,$conn);
 				while($item = @mysql_fetch_array($result)){
 			  ?>
@@ -53,7 +53,7 @@
 				  <span style="color:#0099FF;"><?php echo base64_decode($item["username"])?></span>&nbsp;&nbsp;<span style="color:333333;"><?php echo date("Y-m-d H:i:s",$item["create_time"]-8*3600)?></span>
 				  <div>
 				    <?php 
-						if($item["id"]<=41)
+						if($item["id"]<=36)
 							echo $item["content"];
 						else
 							echo htmlentities(base64_decode($item["content"]),ENT_QUOTES);
