@@ -53,7 +53,7 @@ $header = <<<EOF
 	  </div>
 	  <div style="height:60px;">
 	    <div style="margin:8px 0 14px 200px;float:left;width:238px;">
-	      <span style="font-size:26px;font-weight:bold;color:#FF9900;">梦&nbsp;想&nbsp;学&nbsp;院</span><br />
+	      <span style="font-size:26px;font-weight:bold;color:#FF9900;">梦&nbsp;想&nbsp;学&nbsp;院</span><span style="font-size:17px;color:#0099FF;">&nbsp;&nbsp;实验室</span><br />
 		  <!--<span style="color:#FF9900;font-size:14px;">让&nbsp;&nbsp;梦&nbsp;&nbsp;想&nbsp;&nbsp;在&nbsp;&nbsp;时&nbsp;&nbsp;光&nbsp;&nbsp;中&nbsp;&nbsp;飞&nbsp;&nbsp;舞</span><br />-->
 		  <span style="color:#0099FF;font-size:11px;">I Dream, I Do, I Succeed!</span><br />
 		  <!--<div style="color:#CCCCCC;font-size:13px;border-top:1px solid #CCCCCC;width:128px;margin:2px 0 0 0;">lab.dreamcollege.cn</div>-->

@@ -3,11 +3,11 @@ $nav_basic = array(
 			array('href'=>'aliyun-ecs-essential.php','label'=>'阿里云ECS','links'=>array('aliyun-ecs-essential.php')),
 			array('href'=>'aliyun-oss-essential.php','label'=>'阿里云OSS','links'=>array('aliyun-oss-essential.php')),
 			array('href'=>'aliyun-rds-essential.php','label'=>'阿里云RDS','links'=>array('aliyun-rds-essential.php')),
-			array('href'=>'aliyun-slb-essential.php','label'=>'阿里云SLB','links'=>array('aliyun-slb-essential.php')),
-			array('href'=>'aliyun-domain.php','label'=>'域名和备案','links'=>array('aliyun-domain.php'))
+			array('href'=>'','label'=>'阿里云SLB','links'=>array('aliyun-slb-essential.php')),
+			array('href'=>'','label'=>'域名和备案','links'=>array('aliyun-domain.php'))
 		);
 $nav_project = array(
-			array('href'=>'wordpress.php','label'=>'Wordpress网站架构','links'=>array('wordpress.php'))
+			array('href'=>'','label'=>'Wordpress网站架构','links'=>array('wordpress.php'))
 		);
 
 $current_page = $_SERVER["REQUEST_URI"];

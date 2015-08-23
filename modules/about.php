@@ -16,14 +16,14 @@
   <body style="margin:0px;font-family:'Microsoft YaHei',宋体,Arial;">
     <?php include '../src/header.php'?>
 	<div>
-	  <div class="main_index" style="padding-top:60px;width:960px;height:100%;margin:0 auto;font-size:14px;">
+	  <div class="main_index" style="padding-top:60px;width:960px;min-height:460px;height:100%;margin:0 auto;font-size:14px;">
 	    <div style="width:192px;float:left;font-size:14px;margin:28px 0 0 0;">
 		  <a href="about.php">
 		  <div class="item" style="width:100%;height:40px;color:#FF9900;">
 		    <span style="margin:0 0 0 20px;">关于我们</span>
 		  </div>
 		  </a>
-		  <a href="founding_team.php">
+		  <!--<a href="founding_team.php">
 		  <div class="item" style="width:100%;height:40px;">
 		    <span style="margin:0 0 0 20px;">创始团队成员</span>
 		  </div>
@@ -37,7 +37,7 @@
 		  <div class="item" style="width:100%;height:40px;">
 		    <span style="margin:0 0 0 20px;">常见问题</span>
 		  </div>
-		  </a>
+		  </a>-->
 		  <!--<a href="about.php#join_us">
 		  <div style="width:100%;height:40px;">
 		    <span style="margin:0 0 0 20px;">加入我们</span>

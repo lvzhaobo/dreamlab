@@ -44,7 +44,7 @@
 			  <div style="width:600px;margin:0 auto;">
 			  <?php
 			    include '../lib/db.php';
-				$sql = "SELECT * FROM sgfw_discuss WHERE id > 36 ORDER BY create_time DESC;";
+				$sql = "SELECT * FROM sgfw_discuss WHERE id > 60 ORDER BY create_time DESC;";
 				$result = mysql_query($sql,$conn);
 				while($item = @mysql_fetch_array($result)){
 			  ?>

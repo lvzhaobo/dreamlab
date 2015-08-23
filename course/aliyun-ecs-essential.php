@@ -19,16 +19,6 @@
 		<div class="content" style="width:760px;float:left;">
 			<div id="week1" name="week1" class="index_feature_box al_left" style="margin:28px 10px;min-height:200px;line-height:28px;">
 			  <div>
-			    <div style="float:left;height:120px;">
-				  <img src="../src/images/php.jpg" style="width:200px;"/>
-				</div>
-				<div style="float:left;padding:0px 20px;line-height:22px;font-size:12px;">
-				  <div><span style="color:#999999;margin:0 10px 0 0;">课程时长</span><span>共8周，8周后进行DEMO</span></div>
-				  <div><span style="color:#999999;margin:0 10px 0 0;">团队要求</span><span>3-6人组成小组</span></div>
-				  <div><span style="color:#999999;margin:0 10px 0 0;">课程目标</span><span>1.开发论坛；2.开发团购网</span></div>
-				  <div><span style="color:#999999;margin:0 10px 0 0;">关联课程</span><span>1.HTML&CSS；2.MySQL；3.Javascript</span></div>
-				  <div><span style="color:#999999;margin:0 10px 0 0;">建议</span><span>大二及以上学生，利用课下时间和同学一起完成</span></div>
-				</div>
 				  <?php 
 					$username = isset($_SESSION["user"])?$_SESSION["user"]:"";
 					if(!empty($username)){
@@ -53,49 +43,43 @@
 				  </div>
 				  <div style="clear:float;clear:both;"></div>
 				  <div style="color:#333333;">
-				    <div style="margin:20px 0px;padding:0 20px;font-weight:normal;font-size:16px;color:#333333;width:100%;height:40px;line-height:40px;background-color:#F5F5F5;border-left:4px solid #00A2C9;">你将会学到：</div>
-				    <div style="padding:16px 40px;margin:28px 0;background-color:#F9F9F9;box-shadow:0 5px 5px #CCCCCC;">
-					  <div style="font-weight:bold;margin:10px 0;">
-					    <span style="font-size:14px;color:#0099FF;margin:0 22px 0 0;">PHP部分</span>
-						<span style="color:#CCCCCC;">切换为：</span>
-						<a href="jsp.php" style="text-decoration:underline;"><span style="">Java(JSP)</span></a>
+				    <div style="margin:20px 0px;padding:0 20px;font-weight:normal;font-size:16px;color:#333333;width:100%;height:40px;line-height:40px;background-color:#F5F5F5;border-left:4px solid #00A2C9;">课程介绍</div>
+					<div>
+					    <img src="../src/images/aliyun/aliyun-traning.jpg" style="width:100%;"/>
+					  </div>
+				    <div style="padding:16px 20px;margin:28px 0;background-color:#F9F9F9;box-shadow:0 5px 5px #CCCCCC;">
+					  <div style="font-weight:bold;margin:10px 0;padding:2px 20px;border-bottom:2px solid #CCCCCC;">
+					    <span style="font-size:14px;color:#0099FF;margin:0 22px 0 0;">实验目标</span>
 					  </div>
 					  <ul style="padding:0px;">
-					    <li>运行PHP代码，和HTML&CSS结合</li>
-					    <li>PHP基本语法，包括代码格式、变量（数字、字符串、数组）等</li>
-						<li>PHP逻辑处理，包括if else/switch判断，for/foreach/while循环</li>
-						<li>和数据库交互</li>
-						<li>PHP常用函数，字符串处理、数组处理等</li>
-						<li>面向对象编程</li>
-						<li>代码重构</li>
 					  </ul>
 					</div>
 					<div style="padding:16px 40px;margin:28px 0;background-color:#F9F9F9;box-shadow:0 5px 5px #CCCCCC;">
 					  <div style="font-weight:bold;margin:10px 0;">
-					    <span style="font-size:14px;color:#FF9900;margin:0 22px 0 0;">MySQL部分</span>
-						<span style="color:#CCCCCC;">可使用：</span>
-						<a href="#" style="margin:0 10px 0 0;"><span style="">Sqlite</span></a>
-						<a href="#" style=""><span style="">Sql Server</span></a>
+					    <span style="font-size:14px;color:#FF9900;margin:0 22px 0 0;">适合学员</span>
 					  </div>
 					  <ul style="margin:0px;padding:0px;">
-					    <li>数据库的作用、MySQL数据库的结构（数据库、表、列、数据）等</li>
-						<li>MySQL的安装、连接</li>
-						<li>手动创建数据库、手动创建数据表、手动添加数据</li>
-						<li>对数据库进行查询、删除</li>
-						<li>在数据库中插入数据、修改数据</li>
-						<li>复杂查询及数据库理论知识</li>
-						<li>和PHP交互</li>
 					  </ul>
 					</div>
 					<div style="padding:16px 40px;margin:28px 0;background-color:#F9F9F9;box-shadow:0 5px 5px #CCCCCC;">
-					  <div style="font-weight:bold;margin:10px 0;font-size:14px;color:#FF0099;">团队部分</div>
+					  <div style="font-weight:bold;margin:10px 0;font-size:14px;color:#FF0099;">内容安排</div>
 					  <ul style="margin:0px;padding:0px;">
-					    <li>团队成员间互相协作</li>
-					    <li>SCRUM开发模式</li>
-						<li>SVN基础知识及简单实用（GitHub）</li>
-						<li>项目/网站设计初识</li>
-						<li>调试方法及遇到问题时的自我解决问题能力</li>
-						<li>域名、Apache服务器及网站发布</li>
+					  </ul>
+					</div>
+					<div style="padding:16px 40px;margin:28px 0;background-color:#F9F9F9;box-shadow:0 5px 5px #CCCCCC;">
+					  <div style="font-weight:bold;margin:10px 0;font-size:14px;color:#FF0099;">其他</div>
+					  <ul style="margin:0px;padding:0px;">
+					    <li>实验内容约20分钟</li>
+					  </ul>
+					</div>
+				  </div>
+				  <div style="color:#333333;">
+				    <div style="margin:20px 0px;padding:0 20px;font-weight:normal;font-size:16px;color:#333333;width:100%;height:40px;line-height:40px;background-color:#F5F5F5;border-left:4px solid #00A2C9;">课程介绍</div>
+				    <div style="padding:16px 40px;margin:28px 0;background-color:#F9F9F9;box-shadow:0 5px 5px #CCCCCC;">
+					  <div style="font-weight:bold;margin:10px 0;">
+					    <span style="font-size:14px;color:#0099FF;margin:0 22px 0 0;">暂无</span>
+					  </div>
+					  <ul style="padding:0px;">
 					  </ul>
 					</div>
 				  </div>

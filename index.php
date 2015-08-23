@@ -15,13 +15,14 @@
   <body style="margin:0px;font-family:'Microsoft YaHei',宋体,Arial;">
   <?php $rand = rand(1,5);$img = "bg".$rand.".jpg";?>
     <?php include 'src/header.php'?>
-	<?php ?><div id="header">
+	<?php ?>
+  <div id="header" style="display:none;">
   <div class="wrap">
    <div id="slide-holder">
 		<div id="slide-runner">
 			<a target="_blank"><img id="slide-img-0" src="src/images/bg1.jpg" class="slide" alt="" style="width:100%;overflow:hidden;"/></a>
-			<a target="_blank"><img id="slide-img-1" src="src/images/bg1-1.jpg" class="slide" alt="" style="width:100%;overflow:hidden;"/></a>
-			<a target="_blank"><img id="slide-img-2" src="src/images/bg4.jpg" class="slide" alt="" style="width:100%;overflow:hidden;margin:-100px 0 0 0;"/></a>
+			<!--<a target="_blank"><img id="slide-img-1" src="src/images/bg1-1.jpg" class="slide" alt="" style="width:100%;overflow:hidden;"/></a>
+			<a target="_blank"><img id="slide-img-2" src="src/images/bg4.jpg" class="slide" alt="" style="width:100%;overflow:hidden;margin:-100px 0 0 0;"/></a>-->
 			<div id="slide-controls">
 			 <p id="slide-client" class="text"><strong></strong><span></span></p>
 			 <p id="slide-desc" class="text"></p>
@@ -39,7 +40,7 @@
         "id":"slide-img-0",
         "client":"",
         "desc":""
-    },
+    }/*,
     {
         "id":"slide-img-1", // 与slide-runner中的img标签id对应
         "client":"基础课程",
@@ -49,7 +50,7 @@
         "id":"slide-img-2",
         "client":"项目实践",
         "desc":"在迷茫的大学生活中，我想获得更多的能力和舞台，我在梦想学院中和同学们使用PHP+MySQL一起开发学校的论坛。"
-    }
+    }*/
 	];
    </script>
   </div>
@@ -91,8 +92,16 @@
 		<?php if($rand%3==1){?><span>在迷茫的大学生活中，我想获得更多的能力和舞台，我在使用PHP开发学校的论坛</span><br /><?php }?>
 		<?php if($rand%3==2){?><span>寻找有梦想、有兴趣、有想法的同学，通过我们的扶持，让你的想法、项目顺利发芽、成长</span><br /><?php }?>
 	  </div><?php */?>
-	  <div style="height:548px;background:rgba(0, 0, 0, 0) url('src/images/bg1.jpg') no-repeat scroll 100% 100% / 100% auto;display:none;">
+	  <div style="height:420px;background:rgba(0, 0, 0, 0) url('src/images/bg1.jpg') no-repeat scroll 100% 100% / 100% auto;display:block;">
 	    <!--<img src="src/images/bg1.jpg" style="width:100%;" />-->
+		<div style="width: 400px; font-weight: bold;margin:0px 0 0 680px;">
+			  <div style="font-size:22px;color:#FF00AA;padding:100px 0 40px 0;">叫上小伙伴，学习云计算</div>
+			  <div style="color:#0099FF;margin:0 0 10px 0;">阿里云、腾讯云、UCloud、青云等国内厂商成长迅速</div>
+			  <div style="color:#AA00FF;margin:0 0 10px 0;">Amazon AWS、微软、IBM等国外厂商入华抢夺市场</div>
+			  <div style="color:#FF00AA;"><span style="font-size:22px;color:#FF8800;">厚积薄发</span>是时候掌握云计算技术、为自己储蓄能量了</div>
+			  <div style="color:#99FF00;"><span style="font-size:22px;color:#FF8800;">更好的工作</span>为当前工作寻找解决方案，享受云服务</div>
+			  <a target="_blank" href="modules/study.php"><div style="border:2px solid #FF8800;width:340px;height:28px;padding:10px 20px;text-align:center;margin:40px 0 0 0;color:#FF8800;border-radius:0.5em;box-shadow:0 0 10px #FF8800;">我们提供云实验，助你一臂之力，查看详情</div></a>
+			</div>
 	  </div>
 	  <div id="project" name="project" style="width:1200px;margin:0px auto;font-size:32px;line-height:98px;height:98px;">
 	    <a href="index.php">
