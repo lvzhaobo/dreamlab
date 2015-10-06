@@ -115,7 +115,7 @@ $(document).ready(function(){
 				msg( msg_redo , "<font color='#093'>&radic;</font>");
 		}
 		else{
-			msg( msg_redo , "<font color='red'>&times;两次输入的密码不一至</font>");
+			msg( msg_redo , "<font color='red'>&times;两次输入的密码不一致</font>");
 		}
 		}
 		else{

@@ -113,15 +113,71 @@
 	  <div style="" class="item_title">
 		连接ECS
 	  </div>
+	  <div style="">
+		<ul style="font-size:14px;">
+		<li>下载PuTTY，下载链接<a href="http://www.putty.nl/latest/x86/putty.exe">http://www.putty.nl/latest/x86/putty.exe</a></li>
+		<li>使用PuTTY登录ECS
+		  <br />
+		  打开PuTTY，输入ECS的公网IP地址，端口为22，点击“Open”。
+		  <div id="ecs-10">
+		    <img id="image-rds-1" src="../../src/images/aliyun/ecs-10.jpg" style="width:100%;box-shadow:0 0 5px #CCCCCC;padding:10px 0;margin:10px 0;" />
+		  </div>
+		  <br />
+		  用户名为root，密码为之前创建ECS时设置的密码。（Linux下输入密码并不会直接显示在屏幕中，输入完成后回车确定即可。）
+		  <div id="ecs-11">
+		    <img id="image-rds-1" src="../../src/images/aliyun/ecs-11.jpg" style="width:100%;box-shadow:0 0 5px #CCCCCC;padding:10px 0;margin:10px 0;" />
+		  </div>
+		</li>
+		</ul>
+	  </div>
 	</div>
 	<div style="border-left:2px solid #99FF00;" class="item">
 	  <div style="" class="item_title">
 		搭建网站
 	  </div>
+	  <div style="">
+		<ul style="font-size:14px;">
+		  <li>安装Apache服务器<br />
+		    在PuTTY中运行：<br />
+			<div style="padding:4px 10px;margin:0 0 0 -16px;background-color:#EEEEEE;">apt-get update</div>
+			<div style="padding:4px 10px;margin:0 0 0 -16px;background-color:#EEEEEE;">apt-get install apache2 -y</div>
+			<div style="padding:4px 10px;margin:0 0 0 -16px;background-color:#EEEEEE;">service apache2 start</div>
+		  </li>
+		  <li>在ECS服务器页面查看公网IP地址，粘贴到浏览器中进行访问。能访问到如下图所示页面，表示Apache服务器安装完成并且在ECS上运行成功。<br />
+		    <div id="ecs-12">
+		      <img id="image-rds-1" src="../../src/images/aliyun/ecs-12.jpg" style="width:100%;box-shadow:0 0 5px #CCCCCC;padding:10px 0;margin:10px 0;" />
+		    </div>
+		  </li>
+		  <li>
+		    在Apache服务目录下添加新页面并访问<br />
+			<div style="padding:4px 10px;margin:0 0 0 -16px;background-color:#EEEEEE;">cd /var/www/html</div>
+			使用vi创建并编辑index2.html文件
+			<div style="padding:4px 10px;margin:0 0 0 -16px;background-color:#EEEEEE;">vi index2.html</div>
+			输入指令“i”（即字母i，表示开始输入文本），输入以下示例内容：
+			<div style="padding:4px 10px;margin:0 0 0 -16px;background-color:#EEEEEE;">DreamCollege MyECS IP: 112.124.110.244</div>
+			保存index2.html（保存linux文件方法为：①按下键盘左上角“Esc”键；②输入“:wq”；③回车），在浏览器中访问此页面（例如：http://112.124.110.244/index2.html，需要换成自己的ECS公网IP）。
+		    <br />
+		    <div id="ecs-13">
+		      <img id="image-rds-1" src="../../src/images/aliyun/ecs-13.jpg" style="width:100%;box-shadow:0 0 5px #CCCCCC;padding:10px 0;margin:10px 0;" />
+		    </div>
+		  </li>
+		  <li><span style="font-weight:bold;">至此，你自己动手写的网页已经开始向全世界开放并提供服务了！</span><br />如果有需要，可以继续在/var/www/html下添加文件来完善此网站。</li>
+		</ul>
+	  </div>
 	</div>
 	<div style="border-left:2px solid #99FF00;" class="item">
 	  <div style="" class="item_title">
 		总结
+	  </div>
+	  <div style="">
+	    <div>在本实验中，学习并实践了开通阿里云ECS服务器、对ECS基本管理、使用PuTTY连接ECS、安装Apache服务器、对外提供静态网站服务。</div>
+		<div>接下来可以选择以下实验：</div>
+		<ul style="font-size:14px;">
+		  <li>HTML静态网站开发</li>
+		  <li>PHP动态网站开发</li>
+		  <li>阿里云ELB实验</li>
+		  <li>网站域名及备案</li>
+		</ul>
 	  </div>
 	</div>
   </body>
