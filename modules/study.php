@@ -69,6 +69,16 @@
 				</div>
 			  </div>
 			  <div style="clear:float;clear:both;"></div>
+			  <style>
+			    .category_item {margin-right:10px;color:#FF8800;}
+			  </style>
+			  <div style="padding:10px 40px;">
+			    <div>
+				  <div><span style="font-weight:bold;margin-right:10px;">分类</span><span class="category_item">大学课程</span><span class="category_item">编程</span><span class="category_item">阿里云</span><span class="category_item">腾讯云</span><span class="category_item">UCloud</span><span class="category_item">亚马逊AWS</span></div>
+				  <div><span style="font-weight:bold;margin-right:10px;">难度</span><span class="category_item">在校学生</span><span class="category_item">无编程</span><span class="category_item">需编程</span><span class="category_item">云计算</span></div>
+				</div>
+			  </div>
+			  <div style="clear:float;clear:both;"></div>
 			  <?php 
 			      $data = array(
 								array("name"=>"阿里云ECS","url"=>$workspace."course/aliyun-ecs-essential.php","img"=>$workspace."src/images/aliyun/ecs-1.jpg","text"=>"初步了解阿里云ECS，包括ECS购买、查看状态、登录后台、创建应用等。","type"=>"入门级","started"=>true,"required"=>"无前提课程"),
@@ -78,15 +88,15 @@
 								array("name"=>"域名和备案（基于阿里云）","url"=>$workspace."course/aliyun-domain.php","img"=>$workspace."src/images/dream.jpg","text"=>"向全世界发布网站，包括购买域名、DNS解析、接入配置和网站备案等。","type"=>"入门级","started"=>false,"required"=>"无前提课程"),
 								array("name"=>"Wordpress网站架构（基于阿里云）","url"=>$workspace."course/aliyun-wordpress-profetional.php","img"=>$workspace."src/images/dream.jpg","text"=>"构建Wordpress网站，并使用阿里云ECS、OSS、ELB、RDS、CDN等产品进行架构设计","type"=>"专业级","started"=>false,"required"=>"学习阿里云入门级课程"),
 								/*array("name"=>"C语言基础","url"=>$workspace."course/c.php","img"=>$workspace."src/images/c.jpg","text"=>"辅助大学课程，最重要的基础课程","type"=>"basic","started"=>true,"required"=>"建议本学期开设C语言课程的同学同步学习"),
-								array("name"=>"数据库","url"=>$workspace."course/database.php","img"=>$workspace."src/images/mysql.jpg","text"=>"软件开发必不可少的一部分，通过本课程学习可以让你轻松应对期末数据库考试。","type"=>"basic","started"=>true,"required"=>"建议本学期开设数据库课程的同学同步学习"),
+								array("name"=>"数据库","url"=>$workspace."course/database.php","img"=>$workspace."src/images/mysql.jpg","text"=>"软件开发必不可少的一部分，通过本课程学习可以让你轻松应对期末数据库考试。","type"=>"basic","started"=>true,"required"=>"建议本学期开设数据库课程的同学同步学习"),*/
 								
 								array("name"=>"HTML CSS","url"=>$workspace."course/website.php","img"=>$workspace."src/images/html.jpg","text"=>"开发静态网站，满足院系、社团、兴趣小组、中小企业官方网站的需求。","type"=>"project","started"=>true,"required"=>"面向零基础的同学，同时欢迎非计算机专业同学学习"),
 								array("name"=>"PHP","url"=>$workspace."course/php.php","img"=>$workspace."src/images/php.jpg","text"=>"适合用于动态网站，例如论坛、交流网站，更方便开发静态网站。","type"=>"project","started"=>true,"required"=>"需要了解基本HTML和CSS知识，对PHP等语言要求为零基础"),
-								array("name"=>"Java（JSP）","url"=>$workspace."course/jsp.php","img"=>$workspace."src/images/java.png","text"=>"高大上的综合性开发语言。","type"=>"project","started"=>true,"required"=>"需要了解基本HTML和CSS知识，建议了解Java的同学学习"),
-								
+								/*array("name"=>"Java（JSP）","url"=>$workspace."course/jsp.php","img"=>$workspace."src/images/java.png","text"=>"高大上的综合性开发语言。","type"=>"project","started"=>true,"required"=>"需要了解基本HTML和CSS知识，建议了解Java的同学学习"),
+								*/
 								array("name"=>"WordPress建站","url"=>$workspace."course/wordpress.php","img"=>$workspace."src/images/wordpress.jpg","text"=>"最流行的内容管理系统软件，不需要编写代码即可建设网站","type"=>"project","started"=>true,"required"=>"对代码完全零基础，也不需要写代码"),
 								
-								array("name"=>"ACM入门","url"=>$workspace."course/acm.php","img"=>$workspace."src/images/acm.jpg","text"=>"不必羡慕ACMer，你也可以成为他们，从这里开始。","type"=>"advanced","started"=>true,"required"=>"面向需要整体了解ACM并进行入门的同学，要求了解过C、C++、Java等语言"),
+								/*array("name"=>"ACM入门","url"=>$workspace."course/acm.php","img"=>$workspace."src/images/acm.jpg","text"=>"不必羡慕ACMer，你也可以成为他们，从这里开始。","type"=>"advanced","started"=>true,"required"=>"面向需要整体了解ACM并进行入门的同学，要求了解过C、C++、Java等语言"),
 								
 								array("name"=>"云存储","url"=>$workspace."course/cloudstorage.php","img"=>$workspace."src/images/cloudstorage1.jpg","type"=>"advanced","text"=>"百度云、Dropbox、Google Drive等云存储服务商提供了丰富的API、SDK，赶紧加入云存储吧。","started"=>true,"required"=>"要求掌握PHP、HTML基础知识"),
 								

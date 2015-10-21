@@ -11,6 +11,8 @@
 	//$data = $_POST["account"];
 	$info = "";
 	
+	
+	
 	$sql = "select * from sgfw_user where username='".base64_encode($username)."'";
 	$result = mysql_query($sql,$conn);
 	$row = mysql_fetch_array($result);

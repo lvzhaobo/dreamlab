@@ -61,6 +61,19 @@ window.location.href="../modules/team.php";
 		return ;
 	}
 	
+	if($action == "saveCode"){
+		$data = $_POST["data"];
+		if(!empty($data))
+			file_put_contents("../data/".$_SESSION["user"].".html",$_POST["data"]);
+		return ;
+	}
+	
+	if($action == "printCode"){
+		$content = file_get_contents("../data/".$_SESSION["user"].".html");
+		echo $content;
+		return ;
+	}
+	
 	if($action=="uploadHomework"){
 		$file_name = $_FILES["file"]["name"];
 		if(empty($file_name)){

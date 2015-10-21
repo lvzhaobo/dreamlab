@@ -32,13 +32,21 @@
 			}
 		  ?>
 	<div>
-	  <div class="main index" style="padding-top:40px;min-width:960px;margin:0 auto;font-size:14px;">
+	  <div class="main index" style="padding-top:40px;min-width:960px;margin:0 auto;font-size:14px;position:fixed;">
+	    
+		
 	    <?php include '../../src/myspace_index.php'?>
-		<div class="content" style="width:800px;float:left;margin:0 0 0px 200px;min-height:320px;">
+		<div class="content" style="width:1166px;float:left;margin:0 0 0px 200px;min-height:320px;">
 		  <iframe id="course-content" src="../../course/<?php echo empty($_GET["course"])?"website":$_GET["course"]?>/<?php echo empty($_GET["process"])?"week1":$_GET["process"]?>.php" style="border:0px;width:100%;height:565px;"></iframe>
 		</div>
-		<div class="project_item" style="width:318px;float:right;padding:0px 20px 0px 10px;border-left:2px solid #EEEEEE;background-color:#F7F6F2;position:absolute;right:0px;">
-		  <iframe src="../../course/<?php echo empty($_GET["course"])?"website":$_GET["course"]?>/intro.php?course=<?php echo $_GET["course"]."&process=".$_GET["process"]?>" style="border:0px;width:100%;height:546px;"></iframe>
+		<div class="project_item" style="width:318px;float:right;margin:-20px 20px 0 0;padding:20px 20px 0px 10px;border-left:2px solid #EEEEEE;box-shadow:-4px 0 5px #999999;background-color:#F7F6F2;position:absolute;right:0px;display:none;">
+		  <iframe src="../../course/<?php echo empty($_GET["course"])?"website":$_GET["course"]?>/intro.php?course=<?php echo $_GET["course"]."&process=".@$_GET["process"]?>" style="border:0px;width:100%;height:546px;"></iframe>
+		</div>
+		
+		<div style="position:fixed;right:20px;height:100px;">
+		  <div id="tool" style="width:100px;height:40px;border:1px solid #FF9900;background-color:#FF99FF;line-height:40px;text-align:center;font-weight:bold;">
+		    工具
+		  </div>
 		</div>
 	</div>
 	<div style="clear:float;clear:both;"></div>
@@ -58,5 +66,13 @@ window.location.href="myStudy.php";
 	  $("#image-rds-1").attr("width","200px");
     else
 	  $("#image-rds-1").attr("width","100%");
+  });
+  
+  $("#tool").on("click",function(){
+	  var display = $(".project_item").css("display");
+	  if(display == "none")
+		  $(".project_item").css("display","block"); 
+	  else
+		  $(".project_item").css("display","none"); 
   });
 </script>
