@@ -1,7 +1,7 @@
 ﻿<?php
 session_start();
 //var_dump($_SESSION);
-$workspace = "http://".$_SERVER["HTTP_HOST"]."/dreamlab/";
+$workspace = "http://".$_SERVER["HTTP_HOST"]."/";
 
 if(isset($_SESSION["login_start"]) && (time()-$_SESSION["login_start"])>=300){
 	unset($_SESSION["user"]);
@@ -11,7 +11,7 @@ if(isset($_SESSION["login_start"]) && (time()-$_SESSION["login_start"])>=300){
 $_SESSION["login_start"] = time();
 
 if(isset($_SESSION["user"]) && $_SESSION["user"]!=""){
-	$str = "<a href='".$workspace."modules/myspace/index.php'><span style='color:#0099FF;font-weight:bold;font-size:14px;'>".$_SESSION["user"]."</span></a>&nbsp;&nbsp;<a href='".$workspace."modules/logout.php' style='color:#999999;font-size:14px;'>退出</a>";
+	$str = "<a href='".$workspace."modules/myspace/myStudy.php'><span style='color:#0099FF;font-weight:bold;font-size:14px;'>".$_SESSION["user"]."</span></a>&nbsp;&nbsp;<a href='".$workspace."modules/logout.php' style='color:#999999;font-size:14px;'>退出</a>";
 }
 else{
 	$str = '<a href="'.$workspace.'modules/login.php" style="color:#666666;font-size:14px;">登录</a>&nbsp;&nbsp;<a href="'.$workspace.'modules/register.php" style="color:#666666;font-size:14px;">注册</a>';

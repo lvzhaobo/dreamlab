@@ -4,7 +4,7 @@
 	session_start();
 	
 	//$conn = mysql_connect("127.0.0.1","root");
-	//mysql_select_db("sgfw");
+	mysql_select_db("sgfw");
 	$data = $_POST["account"];
 	$username = $data["username"];
 	$password = $data["password"];
@@ -38,7 +38,7 @@
 ?>
 <script>
 <?php if(empty($info)){?>
-window.location.href="../modules/myspace/index.php";
+window.location.href="../modules/myspace/myStudy.php";
 <?php }
 else{
 ?>
